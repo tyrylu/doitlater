@@ -12,3 +12,4 @@ pub use worker::Worker;
 pub use queue::Queue;
 pub use scheduler::Scheduler;
 pub use error::Error;
+pub use typetag;

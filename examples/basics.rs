@@ -1,4 +1,4 @@
-use doitlater::{ExecutableExt, Queue, Worker};
+use doitlater::{ExecutableExt, Queue, Worker, typetag};
 
 #[derive(serde::Serialize, serde::Deserialize)]
 pub struct HelloTask {
