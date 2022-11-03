@@ -23,7 +23,7 @@ impl Worker {
         match maybe_job {
             Some(job) => {
                     if let Err(e) = job.executable.execute() {
-            Err(Error::JobExecutionError{job_name: job.name.clone(), error: e.to_string()})
+            Err(Error::JobExecutionError{job_name: job.name, error: e.to_string()})
         }
         else {
             Ok(Some(job))
