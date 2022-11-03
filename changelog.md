@@ -1,7 +1,42 @@
 # Changelog
 This file lists all significant changes of this library.
 
+## v0.2.2 (2022-11-03)
+
+### Chore
+
+ - <csr-id-9d6b907c3d6ee5165b94a37382de81873ef943fb/> Bump dependencies
+ - <csr-id-ef6fa8de6d0cbd4e66610dde2b41f47a0b76bc42/> Bump dependencies
+
+### Other
+
+ - <csr-id-1b5ca7e5df0ed49f288f0264e52fca9d9033b643/> Bump dependencies
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 4 commits contributed to the release over the course of 85 calendar days.
+ - 102 days passed between releases.
+ - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' where seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Bump dependencies ([`1b5ca7e`](https://github.com/tyrylu/doitlater/commit/1b5ca7e5df0ed49f288f0264e52fca9d9033b643))
+    - Make clippy happy ([`68a47f0`](https://github.com/tyrylu/doitlater/commit/68a47f06bd023fe43ba70a8ad4bd82d981e5a9a1))
+    - Bump dependencies ([`9d6b907`](https://github.com/tyrylu/doitlater/commit/9d6b907c3d6ee5165b94a37382de81873ef943fb))
+    - Bump dependencies ([`ef6fa8d`](https://github.com/tyrylu/doitlater/commit/ef6fa8de6d0cbd4e66610dde2b41f47a0b76bc42))
+</details>
+
 ## v0.2.1 (2022-07-23)
+
+<csr-id-cfae30f74da9163baa5d015980c81eb9fb0159f5/>
 
 ### Chore
 
@@ -15,9 +50,9 @@ This file lists all significant changes of this library.
 
 <csr-read-only-do-not-edit/>
 
- - 2 commits contributed to the release over the course of 10 calendar days.
+ - 3 commits contributed to the release over the course of 10 calendar days.
  - 10 days passed between releases.
- - 2 commits where understood as [conventional](https://www.conventionalcommits.org).
+ - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' where seen in commit messages
 
 ### Commit Details
@@ -27,8 +62,9 @@ This file lists all significant changes of this library.
 <details><summary>view details</summary>
 
  * **Uncategorized**
-    - Re-export typetag so that the users don't have to depend on it ([`c3f3922`](https://github.comgit//tyrylu/doitlater/commit/c3f3922e4ac1a49375934060d39a39459f8410d7))
-    - Format changelog ([`cfae30f`](https://github.comgit//tyrylu/doitlater/commit/cfae30f74da9163baa5d015980c81eb9fb0159f5))
+    - Release doitlater v0.2.1 ([`d7ecdb9`](https://github.com/tyrylu/doitlater/commit/d7ecdb9c54bda8d59310e83ab1910c1fc19ad548))
+    - Re-export typetag so that the users don't have to depend on it ([`c3f3922`](https://github.com/tyrylu/doitlater/commit/c3f3922e4ac1a49375934060d39a39459f8410d7))
+    - Format changelog ([`cfae30f`](https://github.com/tyrylu/doitlater/commit/cfae30f74da9163baa5d015980c81eb9fb0159f5))
 </details>
 
 ## v0.2.0 (2022-07-13)
@@ -50,7 +86,7 @@ This file lists all significant changes of this library.
 
  - 3 commits contributed to the release.
  - 225 days passed between releases.
- - 2 commits where understood as [conventional](https://www.conventionalcommits.org).
+ - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' where seen in commit messages
 
 ### Commit Details
@@ -60,9 +96,9 @@ This file lists all significant changes of this library.
 <details><summary>view details</summary>
 
  * **Uncategorized**
-    - Release doitlater v0.2.0 ([`2bca0dd`](https://github.comgit//tyrylu/doitlater/commit/2bca0dd091c5c85e2d27bdab49cca9229e7f16ec))
-    - Version bump ([`5ca3ca8`](https://github.comgit//tyrylu/doitlater/commit/5ca3ca889bd538ce4c261d0056dce1e7c1fe644a))
-    - Update dependencies especially type_tag ([`1b3db96`](https://github.comgit//tyrylu/doitlater/commit/1b3db9637b3e35df896a1a55bd07004ad83c1eb0))
+    - Release doitlater v0.2.0 ([`2bca0dd`](https://github.com/tyrylu/doitlater/commit/2bca0dd091c5c85e2d27bdab49cca9229e7f16ec))
+    - Version bump ([`5ca3ca8`](https://github.com/tyrylu/doitlater/commit/5ca3ca889bd538ce4c261d0056dce1e7c1fe644a))
+    - Update dependencies especially type_tag ([`1b3db96`](https://github.com/tyrylu/doitlater/commit/1b3db9637b3e35df896a1a55bd07004ad83c1eb0))
 </details>
 
 ## v0.1.2 (2021-11-29)
@@ -72,7 +108,7 @@ This file lists all significant changes of this library.
 <csr-read-only-do-not-edit/>
 
  - 6 commits contributed to the release over the course of 138 calendar days.
- - 0 commits where understood as [conventional](https://www.conventionalcommits.org).
+ - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' where seen in commit messages
 
 ### Commit Details
@@ -82,11 +118,11 @@ This file lists all significant changes of this library.
 <details><summary>view details</summary>
 
  * **Uncategorized**
-    - Dependency bump ([`456e90d`](https://github.comgit//tyrylu/doitlater/commit/456e90d355e5535acc8f646a49b89a99348b75fe))
-    - Bump version and deps ([`5aa8547`](https://github.comgit//tyrylu/doitlater/commit/5aa854703323439f38303eb23218289d88f6474e))
-    - Add missing cargo.toml keys ([`206cea8`](https://github.comgit//tyrylu/doitlater/commit/206cea87b76a4b6e96576054752cfc562222556f))
-    - Add repository to cargo.toml ([`cfa4092`](https://github.comgit//tyrylu/doitlater/commit/cfa40927086e978cfb7531e6ff12c87ce33befa4))
-    - Add a license ([`cd9492e`](https://github.comgit//tyrylu/doitlater/commit/cd9492e38ae8045fa7e9ad90bb75001b8c8c3b68))
-    - Initial commit ([`a399851`](https://github.comgit//tyrylu/doitlater/commit/a39985128dfecd43fcfee0e5745c0a6c3be38a46))
+    - Dependency bump ([`456e90d`](https://github.com/tyrylu/doitlater/commit/456e90d355e5535acc8f646a49b89a99348b75fe))
+    - Bump version and deps ([`5aa8547`](https://github.com/tyrylu/doitlater/commit/5aa854703323439f38303eb23218289d88f6474e))
+    - Add missing cargo.toml keys ([`206cea8`](https://github.com/tyrylu/doitlater/commit/206cea87b76a4b6e96576054752cfc562222556f))
+    - Add repository to cargo.toml ([`cfa4092`](https://github.com/tyrylu/doitlater/commit/cfa40927086e978cfb7531e6ff12c87ce33befa4))
+    - Add a license ([`cd9492e`](https://github.com/tyrylu/doitlater/commit/cd9492e38ae8045fa7e9ad90bb75001b8c8c3b68))
+    - Initial commit ([`a399851`](https://github.com/tyrylu/doitlater/commit/a39985128dfecd43fcfee0e5745c0a6c3be38a46))
 </details>
 
