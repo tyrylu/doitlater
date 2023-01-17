@@ -1,7 +1,36 @@
 # Changelog
 This file lists all significant changes of this library.
 
+## v0.2.3 (2023-01-17)
+
+### Chore
+
+ - <csr-id-50c1cb135d0d8f2a026014dce421575309499bcd/> bump dependencies
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 1 commit contributed to the release.
+ - 75 days passed between releases.
+ - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - bump dependencies ([`50c1cb1`](https://github.com/tyrylu/doitlater/commit/50c1cb135d0d8f2a026014dce421575309499bcd))
+</details>
+
 ## v0.2.2 (2022-11-03)
+
+<csr-id-9d6b907c3d6ee5165b94a37382de81873ef943fb/>
+<csr-id-ef6fa8de6d0cbd4e66610dde2b41f47a0b76bc42/>
+<csr-id-1b5ca7e5df0ed49f288f0264e52fca9d9033b643/>
 
 ### Chore
 
@@ -16,10 +45,10 @@ This file lists all significant changes of this library.
 
 <csr-read-only-do-not-edit/>
 
- - 4 commits contributed to the release over the course of 85 calendar days.
+ - 5 commits contributed to the release over the course of 85 calendar days.
  - 102 days passed between releases.
  - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
- - 0 issues like '(#ID)' where seen in commit messages
+ - 0 issues like '(#ID)' were seen in commit messages
 
 ### Commit Details
 
@@ -28,6 +57,7 @@ This file lists all significant changes of this library.
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Release doitlater v0.2.2 ([`647b5aa`](https://github.com/tyrylu/doitlater/commit/647b5aab861917acb6ba33e1b8225fe2c959ada8))
     - Bump dependencies ([`1b5ca7e`](https://github.com/tyrylu/doitlater/commit/1b5ca7e5df0ed49f288f0264e52fca9d9033b643))
     - Make clippy happy ([`68a47f0`](https://github.com/tyrylu/doitlater/commit/68a47f06bd023fe43ba70a8ad4bd82d981e5a9a1))
     - Bump dependencies ([`9d6b907`](https://github.com/tyrylu/doitlater/commit/9d6b907c3d6ee5165b94a37382de81873ef943fb))
@@ -53,7 +83,7 @@ This file lists all significant changes of this library.
  - 3 commits contributed to the release over the course of 10 calendar days.
  - 10 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
- - 0 issues like '(#ID)' where seen in commit messages
+ - 0 issues like '(#ID)' were seen in commit messages
 
 ### Commit Details
 
@@ -87,7 +117,7 @@ This file lists all significant changes of this library.
  - 3 commits contributed to the release.
  - 225 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
- - 0 issues like '(#ID)' where seen in commit messages
+ - 0 issues like '(#ID)' were seen in commit messages
 
 ### Commit Details
 
@@ -109,7 +139,7 @@ This file lists all significant changes of this library.
 
  - 6 commits contributed to the release over the course of 138 calendar days.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
- - 0 issues like '(#ID)' where seen in commit messages
+ - 0 issues like '(#ID)' were seen in commit messages
 
 ### Commit Details
 
