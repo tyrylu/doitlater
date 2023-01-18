@@ -1,5 +1,5 @@
-use std::error::Error;
 use crate::Queue;
+use std::error::Error;
 
 /// Represents an executable background job.
 #[typetag::serde]
@@ -8,7 +8,7 @@ pub trait Executable {
 }
 
 pub trait ExecutableExt {
-    fn enqueue_into(self, queue: &mut Queue, name: &str) -> crate::Result<()>;   
+    fn enqueue_into(self, queue: &mut Queue, name: &str) -> crate::Result<()>;
 }
 
 impl<T: Executable + 'static> ExecutableExt for T {
