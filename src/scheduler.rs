@@ -1,9 +1,6 @@
 use chrono::Utc;
 use redis::{Client, Commands, Connection};
-use saffron::Cron;
 use std::collections::HashMap;
-
-use crate::error::Error;
 use crate::scheduled_job::ScheduledJob;
 use crate::{Executable, Queue, Result};
 
@@ -28,11 +25,10 @@ impl Scheduler {
     where
         F: Fn() -> Box<dyn Executable> + 'static + Sync,
     {
-        let cron: Cron = schedule.parse().map_err(Error::CronParsingError)?;
         self.jobs.insert(
             name.to_string(),
             ScheduledJob {
-                schedule: cron,
+                schedule: schedule.to_string(),
                 create_instance: Box::new(create_instance),
             },
         );
@@ -75,13 +71,12 @@ impl Scheduler {
 
     pub fn job_succeeded(&mut self, name: &str) -> Result<()> {
         if let Some(job) = self.jobs.get(name) {
-            if let Some(next_datetime) = job.schedule.next_after(Utc::now()) {
+            let next_datetime = cron_parser::parse(&job.schedule, &Utc::now())?;
                 self.redis_connection.zadd(
                     self.scheduled_jobs_key(),
                     name,
                     next_datetime.timestamp(),
                 )?;
-            }
         }
         Ok(())
     }

@@ -8,5 +8,5 @@ pub enum Error {
     #[error("Job execution error: {error}")]
     JobExecutionError { job_name: String, error: String },
     #[error("Cron parsing error: {0}")]
-    CronParsingError(saffron::parse::CronParseError),
+    CronParsingError(#[from] cron_parser::ParseError),
 }
