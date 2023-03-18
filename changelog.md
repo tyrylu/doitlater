@@ -1,7 +1,41 @@
 # Changelog
 This file lists all significant changes of this library.
 
+## v0.2.4 (2023-03-18)
+
+### Chore
+
+ - <csr-id-4f1fa99729454eb2eb22b52d0f98ba0ca1503f68/> Run rustfmt
+
+### Bug Fixes
+
+ - <csr-id-a150472016ae7a9f29787ba8dca684ad83e3f90b/> Replace the library we use for cron parsing, it relied on a quite old nom, which was throwing clippy future incompatibility warnings
+   Also, by this change, we get rid of nom entirely.
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 3 commits contributed to the release over the course of 59 calendar days.
+ - 59 days passed between releases.
+ - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Replace the library we use for cron parsing, it relied on a quite old nom, which was throwing clippy future incompatibility warnings ([`a150472`](https://github.com/tyrylu/doitlater/commit/a150472016ae7a9f29787ba8dca684ad83e3f90b))
+    - Run rustfmt ([`4f1fa99`](https://github.com/tyrylu/doitlater/commit/4f1fa99729454eb2eb22b52d0f98ba0ca1503f68))
+    - Add dependabot config and a basic CI ([`84a659d`](https://github.com/tyrylu/doitlater/commit/84a659d82f20136ed3eb417e4b4812ee4dd897a2))
+</details>
+
 ## v0.2.3 (2023-01-17)
+
+<csr-id-50c1cb135d0d8f2a026014dce421575309499bcd/>
 
 ### Chore
 
@@ -11,7 +45,7 @@ This file lists all significant changes of this library.
 
 <csr-read-only-do-not-edit/>
 
- - 1 commit contributed to the release.
+ - 2 commits contributed to the release.
  - 75 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
@@ -23,7 +57,8 @@ This file lists all significant changes of this library.
 <details><summary>view details</summary>
 
  * **Uncategorized**
-    - bump dependencies ([`50c1cb1`](https://github.com/tyrylu/doitlater/commit/50c1cb135d0d8f2a026014dce421575309499bcd))
+    - Release doitlater v0.2.3 ([`f105c58`](https://github.com/tyrylu/doitlater/commit/f105c58b6144b283c45676d9bb506fb053aa1594))
+    - Bump dependencies ([`50c1cb1`](https://github.com/tyrylu/doitlater/commit/50c1cb135d0d8f2a026014dce421575309499bcd))
 </details>
 
 ## v0.2.2 (2022-11-03)
