@@ -1,8 +1,8 @@
+use crate::scheduled_job::ScheduledJob;
+use crate::{Executable, Queue, Result};
 use chrono::Utc;
 use redis::{Client, Commands, Connection};
 use std::collections::HashMap;
-use crate::scheduled_job::ScheduledJob;
-use crate::{Executable, Queue, Result};
 
 pub struct Scheduler {
     jobs: HashMap<String, ScheduledJob>,
@@ -72,11 +72,11 @@ impl Scheduler {
     pub fn job_succeeded(&mut self, name: &str) -> Result<()> {
         if let Some(job) = self.jobs.get(name) {
             let next_datetime = cron_parser::parse(&job.schedule, &Utc::now())?;
-                self.redis_connection.zadd(
-                    self.scheduled_jobs_key(),
-                    name,
-                    next_datetime.timestamp(),
-                )?;
+            self.redis_connection.zadd(
+                self.scheduled_jobs_key(),
+                name,
+                next_datetime.timestamp(),
+            )?;
         }
         Ok(())
     }
