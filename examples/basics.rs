@@ -28,7 +28,7 @@ fn main() -> Result<(), doitlater::error::Error> {
     let mut scheduler = worker.create_scheduler()?;
     scheduler.register_job("SayHelloOften", "* * * * *", || {
         Box::new(HelloTask::new("our repeating world"))
-    });
+    }).expect("Could not register task");
     worker.use_scheduler(scheduler);
     worker.run()?;
     Ok(())
