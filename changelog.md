@@ -1,7 +1,53 @@
 # Changelog
 This file lists all significant changes of this library.
 
+## v0.2.5 (2023-04-07)
+
+### Chore
+
+ - <csr-id-5b822efc841eda9208fcc054999fbd3c394c938b/> update redis requirement from 0.22.2 to 0.23.0
+   Updates the requirements on [redis](https://github.com/redis-rs/redis-rs) to permit the latest version.
+   - [Release notes](https://github.com/redis-rs/redis-rs/releases)
+   - [Commits](https://github.com/redis-rs/redis-rs/compare/redis-0.22.2...redis-0.23.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: redis
+     dependency-type: direct:production
+   ...
+ - <csr-id-7abc4e76e1ce50e712596cc026411b8525b465af/> Rustfmt the examples after the fix
+ - <csr-id-b32496f692dc95889e4f1386bd54c404aff2e675/> Run Rustfmt
+
+### Bug Fixes
+
+ - <csr-id-551cc4f686a7280fb2c9c3a9bc0530d27daf134d/> Fix example not to ignore a result
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 5 commits contributed to the release over the course of 18 calendar days.
+ - 19 days passed between releases.
+ - 4 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Merge pull request #1 from tyrylu/dependabot/cargo/redis-0.23.0 ([`f9eb5d7`](https://github.com/tyrylu/doitlater/commit/f9eb5d7d718870faba3058359b264a0c50781892))
+    - Update redis requirement from 0.22.2 to 0.23.0 ([`5b822ef`](https://github.com/tyrylu/doitlater/commit/5b822efc841eda9208fcc054999fbd3c394c938b))
+    - Rustfmt the examples after the fix ([`7abc4e7`](https://github.com/tyrylu/doitlater/commit/7abc4e76e1ce50e712596cc026411b8525b465af))
+    - Fix example not to ignore a result ([`551cc4f`](https://github.com/tyrylu/doitlater/commit/551cc4f686a7280fb2c9c3a9bc0530d27daf134d))
+    - Run Rustfmt ([`b32496f`](https://github.com/tyrylu/doitlater/commit/b32496f692dc95889e4f1386bd54c404aff2e675))
+</details>
+
 ## v0.2.4 (2023-03-18)
+
+<csr-id-4f1fa99729454eb2eb22b52d0f98ba0ca1503f68/>
 
 ### Chore
 
@@ -16,7 +62,7 @@ This file lists all significant changes of this library.
 
 <csr-read-only-do-not-edit/>
 
- - 3 commits contributed to the release over the course of 59 calendar days.
+ - 4 commits contributed to the release over the course of 59 calendar days.
  - 59 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
@@ -28,6 +74,7 @@ This file lists all significant changes of this library.
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Release doitlater v0.2.4 ([`839589e`](https://github.com/tyrylu/doitlater/commit/839589e2ce659bbb4a68d9eb7da05fd266616843))
     - Replace the library we use for cron parsing, it relied on a quite old nom, which was throwing clippy future incompatibility warnings ([`a150472`](https://github.com/tyrylu/doitlater/commit/a150472016ae7a9f29787ba8dca684ad83e3f90b))
     - Run rustfmt ([`4f1fa99`](https://github.com/tyrylu/doitlater/commit/4f1fa99729454eb2eb22b52d0f98ba0ca1503f68))
     - Add dependabot config and a basic CI ([`84a659d`](https://github.com/tyrylu/doitlater/commit/84a659d82f20136ed3eb417e4b4812ee4dd897a2))
