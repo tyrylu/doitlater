@@ -1,7 +1,51 @@
 # Changelog
 This file lists all significant changes of this library.
 
+## v0.2.6 (2023-04-11)
+
+### Chore
+
+ - <csr-id-ac23cb3f79c9556fb26e0ad9071e4ec246b6d44c/> update cron-parser requirement from 0.7.11 to 0.8.0
+   Updates the requirements on [cron-parser](https://github.com/nbari/cron-parser) to permit the latest version.
+   - [Release notes](https://github.com/nbari/cron-parser/releases)
+   - [Commits](https://github.com/nbari/cron-parser/compare/0.7.11...0.8.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: cron-parser
+     dependency-type: direct:production
+   ...
+
+### Bug Fixes
+
+ - <csr-id-7ffc383c621eda8e6545559ffd1cd86d8d612f2b/> Make cargo audit happy by using only needed chrono features and updated cron_parser
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 3 commits contributed to the release.
+ - 4 days passed between releases.
+ - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Make cargo audit happy by using only needed chrono features and updated cron_parser ([`7ffc383`](https://github.com/tyrylu/doitlater/commit/7ffc383c621eda8e6545559ffd1cd86d8d612f2b))
+    - Merge pull request #2 from tyrylu/dependabot/cargo/cron-parser-0.8.0 ([`44a539f`](https://github.com/tyrylu/doitlater/commit/44a539f50b1da676cfb60464ea9389c78f6e7909))
+    - Update cron-parser requirement from 0.7.11 to 0.8.0 ([`ac23cb3`](https://github.com/tyrylu/doitlater/commit/ac23cb3f79c9556fb26e0ad9071e4ec246b6d44c))
+</details>
+
 ## v0.2.5 (2023-04-07)
+
+<csr-id-5b822efc841eda9208fcc054999fbd3c394c938b/>
+<csr-id-7abc4e76e1ce50e712596cc026411b8525b465af/>
+<csr-id-b32496f692dc95889e4f1386bd54c404aff2e675/>
 
 ### Chore
 
@@ -26,7 +70,7 @@ This file lists all significant changes of this library.
 
 <csr-read-only-do-not-edit/>
 
- - 5 commits contributed to the release over the course of 18 calendar days.
+ - 6 commits contributed to the release over the course of 18 calendar days.
  - 19 days passed between releases.
  - 4 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
@@ -38,6 +82,7 @@ This file lists all significant changes of this library.
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Release doitlater v0.2.5 ([`fc572a3`](https://github.com/tyrylu/doitlater/commit/fc572a3c97e603c9de23eb92b89ac48e491fd3fa))
     - Merge pull request #1 from tyrylu/dependabot/cargo/redis-0.23.0 ([`f9eb5d7`](https://github.com/tyrylu/doitlater/commit/f9eb5d7d718870faba3058359b264a0c50781892))
     - Update redis requirement from 0.22.2 to 0.23.0 ([`5b822ef`](https://github.com/tyrylu/doitlater/commit/5b822efc841eda9208fcc054999fbd3c394c938b))
     - Rustfmt the examples after the fix ([`7abc4e7`](https://github.com/tyrylu/doitlater/commit/7abc4e76e1ce50e712596cc026411b8525b465af))
