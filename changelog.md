@@ -1,7 +1,49 @@
 # Changelog
 This file lists all significant changes of this library.
 
+## v0.2.7 (2023-10-08)
+
+### Chore
+
+ - <csr-id-1a66f02c93bac5839c195fdef3986654b81a6ee2/> Update dependencies
+ - <csr-id-87d00a694c6cae82a73fb174f3255143a6e705f7/> bump actions/checkout from 3 to 4
+   Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
+   - [Release notes](https://github.com/actions/checkout/releases)
+   - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+   - [Commits](https://github.com/actions/checkout/compare/v3...v4)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: actions/checkout
+     dependency-type: direct:production
+     update-type: version-update:semver-major
+   ...
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 4 commits contributed to the release over the course of 33 calendar days.
+ - 179 days passed between releases.
+ - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Merge branch 'master' of github.com:tyrylu/doitlater ([`a8f860a`](https://github.com/tyrylu/doitlater/commit/a8f860ae6f7ac25be35efd91a20441291a1e1653))
+    - Update dependencies ([`1a66f02`](https://github.com/tyrylu/doitlater/commit/1a66f02c93bac5839c195fdef3986654b81a6ee2))
+    - Merge pull request #3 from tyrylu/dependabot/github_actions/actions/checkout-4 ([`f64926f`](https://github.com/tyrylu/doitlater/commit/f64926f5ad58c1996a748046d5509c76f5e2e329))
+    - Bump actions/checkout from 3 to 4 ([`87d00a6`](https://github.com/tyrylu/doitlater/commit/87d00a694c6cae82a73fb174f3255143a6e705f7))
+</details>
+
 ## v0.2.6 (2023-04-11)
+
+<csr-id-ac23cb3f79c9556fb26e0ad9071e4ec246b6d44c/>
 
 ### Chore
 
@@ -24,7 +66,7 @@ This file lists all significant changes of this library.
 
 <csr-read-only-do-not-edit/>
 
- - 3 commits contributed to the release.
+ - 4 commits contributed to the release.
  - 4 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
@@ -36,6 +78,7 @@ This file lists all significant changes of this library.
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Release doitlater v0.2.6 ([`b8d57ca`](https://github.com/tyrylu/doitlater/commit/b8d57caaf1db4127aab170c83d25630e2139c29b))
     - Make cargo audit happy by using only needed chrono features and updated cron_parser ([`7ffc383`](https://github.com/tyrylu/doitlater/commit/7ffc383c621eda8e6545559ffd1cd86d8d612f2b))
     - Merge pull request #2 from tyrylu/dependabot/cargo/cron-parser-0.8.0 ([`44a539f`](https://github.com/tyrylu/doitlater/commit/44a539f50b1da676cfb60464ea9389c78f6e7909))
     - Update cron-parser requirement from 0.7.11 to 0.8.0 ([`ac23cb3`](https://github.com/tyrylu/doitlater/commit/ac23cb3f79c9556fb26e0ad9071e4ec246b6d44c))
