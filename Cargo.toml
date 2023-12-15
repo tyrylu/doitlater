@@ -1,5 +1,5 @@
 [package]
-version = "0.2.7"
+version = "0.3.0"
 name = "doitlater"
 edition = "2018"
 repository = "https://github.com/tyrylu/doitlater"

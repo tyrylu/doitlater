@@ -1,7 +1,68 @@
 # Changelog
 This file lists all significant changes of this library.
 
+## v0.3.0 (2023-12-15)
+
+### Chore
+
+ - <csr-id-024aa07a05bf578965d771031400f9deca5470dd/> update redis requirement from 0.23.3 to 0.24.0
+   Updates the requirements on [redis](https://github.com/redis-rs/redis-rs) to permit the latest version.
+   - [Release notes](https://github.com/redis-rs/redis-rs/releases)
+   - [Commits](https://github.com/redis-rs/redis-rs/compare/redis-0.23.3...redis-0.24.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: redis
+     dependency-type: direct:production
+   ...
+ - <csr-id-1a66f02c93bac5839c195fdef3986654b81a6ee2/> Update dependencies
+ - <csr-id-87d00a694c6cae82a73fb174f3255143a6e705f7/> bump actions/checkout from 3 to 4
+   Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
+   - [Release notes](https://github.com/actions/checkout/releases)
+   - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+   - [Commits](https://github.com/actions/checkout/compare/v3...v4)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: actions/checkout
+     dependency-type: direct:production
+     update-type: version-update:semver-major
+   ...
+
+### New Features
+
+ - <csr-id-2a7bee176fa8060d974f01b6df7bde40019bddc4/> Use Duration for the queue polling timeout, not a simple number
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 8 commits contributed to the release over the course of 101 calendar days.
+ - 248 days passed between releases.
+ - 4 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Merge pull request #4 from tyrylu/dependabot/cargo/redis-0.24.0 ([`e2ffabd`](https://github.com/tyrylu/doitlater/commit/e2ffabd052d875bf5812fe787ac12963a176d62e))
+    - Use Duration for the queue polling timeout, not a simple number ([`2a7bee1`](https://github.com/tyrylu/doitlater/commit/2a7bee176fa8060d974f01b6df7bde40019bddc4))
+    - Update redis requirement from 0.23.3 to 0.24.0 ([`024aa07`](https://github.com/tyrylu/doitlater/commit/024aa07a05bf578965d771031400f9deca5470dd))
+    - Release doitlater v0.2.7 ([`6f4dd3b`](https://github.com/tyrylu/doitlater/commit/6f4dd3b84ea17f44898b22b62326929658b264ce))
+    - Merge branch 'master' of github.com:tyrylu/doitlater ([`a8f860a`](https://github.com/tyrylu/doitlater/commit/a8f860ae6f7ac25be35efd91a20441291a1e1653))
+    - Update dependencies ([`1a66f02`](https://github.com/tyrylu/doitlater/commit/1a66f02c93bac5839c195fdef3986654b81a6ee2))
+    - Merge pull request #3 from tyrylu/dependabot/github_actions/actions/checkout-4 ([`f64926f`](https://github.com/tyrylu/doitlater/commit/f64926f5ad58c1996a748046d5509c76f5e2e329))
+    - Bump actions/checkout from 3 to 4 ([`87d00a6`](https://github.com/tyrylu/doitlater/commit/87d00a694c6cae82a73fb174f3255143a6e705f7))
+</details>
+
 ## v0.2.7 (2023-10-08)
+
+<csr-id-1a66f02c93bac5839c195fdef3986654b81a6ee2/>
+<csr-id-87d00a694c6cae82a73fb174f3255143a6e705f7/>
 
 ### Chore
 
@@ -18,28 +79,6 @@ This file lists all significant changes of this library.
      dependency-type: direct:production
      update-type: version-update:semver-major
    ...
-
-### Commit Statistics
-
-<csr-read-only-do-not-edit/>
-
- - 4 commits contributed to the release over the course of 33 calendar days.
- - 179 days passed between releases.
- - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
- - 0 issues like '(#ID)' were seen in commit messages
-
-### Commit Details
-
-<csr-read-only-do-not-edit/>
-
-<details><summary>view details</summary>
-
- * **Uncategorized**
-    - Merge branch 'master' of github.com:tyrylu/doitlater ([`a8f860a`](https://github.com/tyrylu/doitlater/commit/a8f860ae6f7ac25be35efd91a20441291a1e1653))
-    - Update dependencies ([`1a66f02`](https://github.com/tyrylu/doitlater/commit/1a66f02c93bac5839c195fdef3986654b81a6ee2))
-    - Merge pull request #3 from tyrylu/dependabot/github_actions/actions/checkout-4 ([`f64926f`](https://github.com/tyrylu/doitlater/commit/f64926f5ad58c1996a748046d5509c76f5e2e329))
-    - Bump actions/checkout from 3 to 4 ([`87d00a6`](https://github.com/tyrylu/doitlater/commit/87d00a694c6cae82a73fb174f3255143a6e705f7))
-</details>
 
 ## v0.2.6 (2023-04-11)
 
