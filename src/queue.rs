@@ -1,6 +1,7 @@
 use crate::{job::Job, Executable, Result};
 use redis::{Client, Commands, Connection, LposOptions};
 use std::env;
+use std::time::Duration;
 
 pub struct Queue {
     qname: String,
@@ -62,10 +63,10 @@ impl Queue {
         Ok(())
     }
 
-    pub fn dequeue_executable_job(&mut self, timeout: usize) -> Result<Option<Job>> {
+    pub fn dequeue_executable_job(&mut self, timeout: Duration) -> Result<Option<Job>> {
         let result: Option<(String, String)> = self
             .redis_conn
-            .blpop(self.immediately_executable_key(), timeout)?;
+            .blpop(self.immediately_executable_key(), timeout.as_secs_f64())?;
         if let Some((_key, name)) = result {
             let data: Vec<u8> = self.redis_conn.hget(self.jobs_storage_key(), name)?;
             Ok(Some(Job::from_serialized(&data)?))

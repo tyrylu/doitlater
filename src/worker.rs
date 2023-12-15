@@ -28,7 +28,7 @@ impl Worker {
         )
     }
 
-    fn maybe_process_job(&mut self, timeout: usize) -> Result<Option<Job>> {
+    fn maybe_process_job(&mut self, timeout: Duration) -> Result<Option<Job>> {
         let maybe_job = self.queue.dequeue_executable_job(timeout)?;
         match maybe_job {
             Some(job) => {
@@ -56,7 +56,7 @@ impl Worker {
                     now = Instant::now();
                 }
             }
-            match self.maybe_process_job(10) {
+            match self.maybe_process_job(Duration::from_secs(10)) {
                 Ok(None) => continue,
                 Ok(Some(job)) => {
                     info!("Successfully executed {}.", job.name);
