@@ -2,6 +2,7 @@ use crate::{error::Error, job::Job, scheduler::Scheduler, Queue, Result};
 use log::{error, info};
 use std::env;
 use std::{
+    panic::{self, AssertUnwindSafe},
     sync::atomic::{AtomicBool, Ordering},
     time::{Duration, Instant},
 };
@@ -32,7 +33,9 @@ impl Worker {
         let maybe_job = self.queue.dequeue_executable_job(timeout)?;
         match maybe_job {
             Some(job) => {
-                if let Err(e) = job.executable.execute() {
+                let job_result = panic::catch_unwind(AssertUnwindSafe(|| { job.executable.execute() }));
+                if let Ok(ret) = job_result {
+                if let Err(e) = ret {
                     Err(Error::JobExecutionError {
                         job_name: job.name,
                         error: e.to_string(),
@@ -40,6 +43,12 @@ impl Worker {
                 } else {
                     Ok(Some(job))
                 }
+            } else {
+                Err(Error::JobExecutionError {
+                    job_name: job.name,
+                    error: "Panic".to_string(),
+                })
+            }
             }
             None => Ok(None),
         }
