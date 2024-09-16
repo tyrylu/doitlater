@@ -55,7 +55,7 @@ impl Scheduler {
             queue.enqueue(&name, (job.create_instance)())?;
         }
         self.redis_connection
-            .zrembyscore(self.scheduled_jobs_key(), 0, current_timestamp)?;
+            .zrembyscore::<_, _, _, ()>(self.scheduled_jobs_key(), 0, current_timestamp)?;
         Ok(())
     }
 
@@ -72,7 +72,7 @@ impl Scheduler {
     pub fn job_succeeded(&mut self, name: &str) -> Result<()> {
         if let Some(job) = self.jobs.get(name) {
             let next_datetime = cron_parser::parse(&job.schedule, &Utc::now())?;
-            self.redis_connection.zadd(
+            self.redis_connection.zadd::<_, _, _, ()>(
                 self.scheduled_jobs_key(),
                 name,
                 next_datetime.timestamp(),

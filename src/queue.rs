@@ -58,7 +58,7 @@ impl Queue {
                 .ignore()
                 .hset(self.jobs_storage_key(), name, job.serialize()?)
                 .ignore()
-                .query(&mut self.redis_conn)?;
+                .query::<()>(&mut self.redis_conn)?;
         }
         Ok(())
     }
@@ -76,7 +76,7 @@ impl Queue {
     }
 
     pub fn delete_job_data(&mut self, name: &str) -> Result<()> {
-        self.redis_conn.hdel(self.jobs_storage_key(), name)?;
+        self.redis_conn.hdel::<_, _, ()>(self.jobs_storage_key(), name)?;
         Ok(())
     }
 
