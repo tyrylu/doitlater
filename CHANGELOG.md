@@ -10,6 +10,8 @@
 - Update dependencies
 - Run rustfmt
 - Add cargo-release config
+- Recreate changelog
+- Recreate changelog
 ## [0.2.6] - 2023-04-11
 
 ### 🐛 Bug Fixes
