@@ -33,22 +33,22 @@ impl Worker {
         let maybe_job = self.queue.dequeue_executable_job(timeout)?;
         match maybe_job {
             Some(job) => {
-                let job_result = panic::catch_unwind(AssertUnwindSafe(|| { job.executable.execute() }));
+                let job_result = panic::catch_unwind(AssertUnwindSafe(|| job.executable.execute()));
                 if let Ok(ret) = job_result {
-                if let Err(e) = ret {
+                    if let Err(e) = ret {
+                        Err(Error::JobExecutionError {
+                            job_name: job.name,
+                            error: e.to_string(),
+                        })
+                    } else {
+                        Ok(Some(job))
+                    }
+                } else {
                     Err(Error::JobExecutionError {
                         job_name: job.name,
-                        error: e.to_string(),
+                        error: "Panic".to_string(),
                     })
-                } else {
-                    Ok(Some(job))
                 }
-            } else {
-                Err(Error::JobExecutionError {
-                    job_name: job.name,
-                    error: "Panic".to_string(),
-                })
-            }
             }
             None => Ok(None),
         }

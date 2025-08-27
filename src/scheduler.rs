@@ -54,8 +54,11 @@ impl Scheduler {
                 .expect("We did not know about a scheduled job");
             queue.enqueue(&name, (job.create_instance)())?;
         }
-        self.redis_connection
-            .zrembyscore::<_, _, _, ()>(self.scheduled_jobs_key(), 0, current_timestamp)?;
+        self.redis_connection.zrembyscore::<_, _, _, ()>(
+            self.scheduled_jobs_key(),
+            0,
+            current_timestamp,
+        )?;
         Ok(())
     }
 

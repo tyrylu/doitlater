@@ -76,7 +76,8 @@ impl Queue {
     }
 
     pub fn delete_job_data(&mut self, name: &str) -> Result<()> {
-        self.redis_conn.hdel::<_, _, ()>(self.jobs_storage_key(), name)?;
+        self.redis_conn
+            .hdel::<_, _, ()>(self.jobs_storage_key(), name)?;
         Ok(())
     }
 
