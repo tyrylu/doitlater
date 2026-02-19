@@ -16,10 +16,7 @@ impl Job {
     }
 
     pub fn serialize(&self) -> Result<Vec<u8>> {
-        Ok(bitcode::serialize(
-            &self
-            
-        )?)
+        Ok(bitcode::serialize(&self)?)
     }
 
     pub fn from_serialized(data: &[u8]) -> Result<Self> {
