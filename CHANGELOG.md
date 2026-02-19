@@ -1,9 +1,10 @@
-## [0.4.0] - 2025-08-27
+## [0.5.0] - 2026-02-19
 
 ### 🚀 Features
 
 - Use Duration for the queue polling timeout, not a simple number
 - A panic in a job should not bring down the whole worker
+- Replace bincode by bitcode, unfortunately no migration for your job queues
 
 ### ⚙️ Miscellaneous Tasks
 
@@ -12,6 +13,10 @@
 - Add cargo-release config
 - Recreate changelog
 - Recreate changelog
+- Release doitlater version 0.4.0
+- Update dependencies
+- Run rustfmt
+- Update changelog
 ## [0.2.6] - 2023-04-11
 
 ### 🐛 Bug Fixes
