@@ -16,14 +16,14 @@ impl Job {
     }
 
     pub fn serialize(&self) -> Result<Vec<u8>> {
-        Ok(bincode::serde::encode_to_vec(
-            &self,
-            bincode::config::legacy(),
+        Ok(bitcode::serialize(
+            &self
+            
         )?)
     }
 
     pub fn from_serialized(data: &[u8]) -> Result<Self> {
-        Ok(bincode::serde::decode_from_slice(data, bincode::config::legacy())?.0)
+        Ok(bitcode::deserialize(data)?)
     }
 }
 
